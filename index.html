@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free AI Customer Service FAQ Generator for Salons, Cafes & Local Shops</title>
+<meta name="description" content="Fill in your shop details and instantly generate 10 ready-to-import AI chatbot FAQs (category, question, standard answer, needs human, trigger keywords). Refund, complaint, allergy and guarantee questions always route to a human. Uses only what you enter, never invents prices. Free, offline, CSV export.">
+<link rel="canonical" href="https://showayzun.github.io/shop-faq-generator/">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c2410c'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3EQ%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website"><meta property="og:url" content="https://showayzun.github.io/shop-faq-generator/">
+<meta property="og:title" content="Free AI Customer Service FAQ Generator for Salons, Cafes & Local Shops"><meta property="og:description" content="Fill in your shop details and instantly generate 10 ready-to-import AI chatbot FAQs (category, question, standard answer, needs human, trigger keywords). Refund, complaint, allergy and guarantee questions always route to a human. Uses only what you enter, never invents prices. Free, offline, CSV export.">
+<meta property="og:image" content="https://showayzun.github.io/shop-faq-generator/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Free AI Customer Service FAQ Generator for Salons, Cafes & Local Shops">
+<meta name="twitter:description" content="Fill in your shop details and instantly generate 10 ready-to-import AI chatbot FAQs (category, question, standard answer, needs human, trigger keywords). Refund, complaint, allergy and guarantee questions always route to a human. Uses only what you enter, never invents prices. Free, offline, CSV export."><meta name="twitter:image" content="https://showayzun.github.io/shop-faq-generator/og.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "AI Customer Service FAQ Generator for Local Shops", "url": "https://showayzun.github.io/shop-faq-generator/", "applicationCategory": "BusinessApplication", "operatingSystem": "Any (web browser)", "description": "Fill in your shop details and instantly generate 10 ready-to-import AI chatbot FAQs (category, question, standard answer, needs human, trigger keywords). Refund, complaint, allergy and guarantee questions always route to a human. Uses only what you enter, never invents prices. Free, offline, CSV export.", "inLanguage": "en", "dateModified": "2026-10", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does the FAQ generator create?", "acceptedAnswer": {"@type": "Answer", "text": "Ten FAQ rows for an AI customer service bot, each with five fields: Category, Question, Standard answer, Needs human, and Trigger keywords. You can preview them, copy them as text, or download a CSV."}}, {"@type": "Question", "name": "Does it make up prices or details?", "acceptedAnswer": {"@type": "Answer", "text": "No. Answers only use what you type in. Prices appear only for services where you entered a price; if a field is empty, the answer says the information isn't available yet and the row is set to Needs human = Yes."}}, {"@type": "Question", "name": "Which questions always go to a human?", "acceptedAnswer": {"@type": "Answer", "text": "Refunds, complaints, allergies or reactions, and guaranteed results are always set to Needs human = Yes, and their answers never promise an outcome."}}, {"@type": "Question", "name": "Can I open the CSV in Excel?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The CSV is saved as UTF-8 with a BOM so Excel and Google Sheets open it with the correct characters."}}, {"@type": "Question", "name": "Is my shop data uploaded anywhere?", "acceptedAnswer": {"@type": "Answer", "text": "No. Everything runs in your browser and the page works offline. Nothing you type is sent to a server."}}, {"@type": "Question", "name": "Is this medical or legal advice?", "acceptedAnswer": {"@type": "Answer", "text": "No. It generates customer-service templates from your input. Allergy, refund and complaint cases should be handled by your staff; anyone with a serious reaction should seek medical care."}}]}</script>
+<style>
+:root{--bg:#faf7f2;--card:#fff;--ink:#1f2328;--muted:#6b7280;--line:#e7e2da;--acc:#c2410c}
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+.wrap{max-width:980px;margin:0 auto;padding:16px 14px 48px}
+h1{font-size:24px;margin:6px 0 4px}.lead{color:#4b5563;margin:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-top:14px}
+h2{font-size:17px;margin:0 0 10px}
+.grid{display:grid;grid-template-columns:1fr;gap:10px}
+@media(min-width:720px){.grid{grid-template-columns:1fr 1fr}.full{grid-column:1/-1}h1{font-size:28px}}
+label{display:block;font-size:13px;font-weight:600;margin-bottom:4px}label small{font-weight:400;color:var(--muted)}
+input,select{width:100%;padding:10px;border:1px solid #d6d3d1;border-radius:8px;font:inherit;background:#fff}
+input:focus,select:focus{outline:2px solid var(--acc);border-color:var(--acc)}
+.svc{display:grid;grid-template-columns:1fr 1fr 34px;gap:6px;margin-bottom:6px}
+.svc button{border:1px solid #d6d3d1;background:#fff;border-radius:8px;cursor:pointer}
+.btn{display:inline-block;border:0;border-radius:9px;padding:11px 16px;font:inherit;font-weight:700;cursor:pointer;text-decoration:none}
+.pri{background:var(--acc);color:#fff}.sec{background:#f5f5f4;color:#1f2328;border:1px solid #d6d3d1}
+.row{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.tscroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+th{color:var(--muted);font-size:12px;white-space:nowrap}td.h{white-space:nowrap;font-weight:700}td.h.y{color:#b91c1c}
+.note{font-size:12px;color:var(--muted)}.msg{font-size:13px;color:#047857;min-height:18px}
+.cta{background:#1c1917;color:#fff;border-radius:12px;padding:16px;margin-top:14px}.cta h2{color:#fff}
+.cta ul{margin:6px 0 10px;padding-left:20px}.cta a.btn{margin:4px 8px 4px 0}
+.cta .gold{background:#fb923c;color:#1c1917}.cta .ghost{background:transparent;color:#fed7aa;border:1px solid #fed7aa}.cta .note{color:#d6d3d1}
+.faq{border-top:1px solid var(--line);padding:9px 0}.faq summary{cursor:pointer;font-weight:600}.faq p{margin:6px 0 0;color:#374151}
+.disc{font-size:12px;color:var(--muted);margin-top:16px;border-top:1px solid var(--line);padding-top:10px}
+textarea#out{position:absolute;left:-9999px;top:0}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>AI Customer Service FAQ Generator for Salons, Cafes &amp; Local Shops</h1>
+<p class="lead">Fill in your shop details and get 10 standard Q&amp;As you can load straight into an AI chatbot (Category / Question / Standard answer / Needs human / Trigger keywords). Refunds, complaints, allergies and guarantees always route to a human. It only uses what you enter and never invents prices. <span class="note">Free · works offline · nothing is uploaded · updated 2026-10</span></p>
+
+<section class="card">
+<h2>1. Shop details</h2>
+<div class="grid">
+  <div><label for="name">Shop name *</label><input id="name" placeholder="e.g. Maple Nail Studio"></div>
+  <div><label for="ind">Industry *</label><select id="ind"><option value="beauty">Salon / beauty</option><option value="food">Cafe / restaurant</option><option value="other">Other local service</option></select></div>
+  <div class="full"><label for="addr">Address</label><input id="addr" placeholder="e.g. 12 Example Street, 2nd floor"></div>
+  <div><label for="hours">Opening hours</label><input id="hours" placeholder="e.g. 10:00–21:00"></div>
+  <div><label for="closed">Closed days</label><input id="closed" placeholder="e.g. Mondays"></div>
+  <div class="full"><label>Services and price ranges <small>(prices appear only as you enter them; if blank, the answer defers to staff)</small></label>
+    <div id="svcs"></div><button class="btn sec" type="button" id="addSvc">+ Add service</button></div>
+  <div><label for="book">Booking method</label><input id="book" placeholder="e.g. Instagram DM, phone, booking link"></div>
+  <div><label for="lead">Booking lead time</label><input id="lead" placeholder="e.g. at least 1 day ahead"></div>
+  <div class="full"><label for="park">Parking / transit</label><input id="park" placeholder="e.g. street parking; 5 min walk from Central station"></div>
+  <div class="full"><label for="refund">Refund rule (one line)</label><input id="refund" placeholder="e.g. unused prepaid sessions refundable within 7 days"></div>
+</div>
+<div class="row"><button class="btn pri" type="button" id="gen">Generate 10 FAQs</button><button class="btn sec" type="button" id="demo">Fill sample data</button></div>
+<div class="msg" id="err"></div>
+</section>
+
+<section class="card" id="resCard" hidden>
+<h2>2. Preview (10 rows)</h2>
+<div class="tscroll"><table id="tbl"><thead><tr><th>Category</th><th>Question</th><th>Standard answer</th><th>Needs human</th><th>Trigger keywords</th></tr></thead><tbody></tbody></table></div>
+<div class="row"><button class="btn pri" type="button" id="dl">Download CSV (opens in Excel)</button><button class="btn sec" type="button" id="cp">Copy as text</button></div>
+<div class="msg" id="msg"></div>
+<p class="note">Check every row before going live: hours, prices and refund rules must match your real policy. For rows marked "Yes", the bot should only acknowledge and log; a person gives the final answer.</p>
+</section>
+
+<section class="cta">
+<h2>Get the full Local Shop AI CS Playbook</h2>
+<ul>
+  <li>40 sample FAQs</li>
+  <li>Keyword routing: what the bot answers vs. what goes to a human</li>
+  <li>Pre-launch test cases</li>
+  <li>Night-lead log in Notion, so after-hours enquiries aren't lost</li>
+</ul>
+<a class="btn gold" href="https://showayzun.gumroad.com/l/local-shop-ai-cs-playbook?utm_source=faq-generator&utm_medium=gh-pages" target="_blank" rel="noopener">Full pack · $19</a>
+<a class="btn ghost" href="https://showayzun.gumroad.com/l/local-shop-ai-cs-playbook-lite?utm_source=faq-generator&utm_medium=gh-pages" target="_blank" rel="noopener">Lite · $9</a>
+<p class="note">Heads-up: the playbook's content is in Simplified Chinese. This free generator is fully in English. Links open Gumroad and need an internet connection.</p>
+</section>
+
+<section class="card" id="faq">
+<h2>FAQ</h2>
+<details class="faq"><summary>What does the FAQ generator create?</summary><p>Ten FAQ rows for an AI customer service bot, each with five fields: Category, Question, Standard answer, Needs human, and Trigger keywords. You can preview them, copy them as text, or download a CSV.</p></details>
+<details class="faq"><summary>Does it make up prices or details?</summary><p>No. Answers only use what you type in. Prices appear only for services where you entered a price; if a field is empty, the answer says the information isn't available yet and the row is set to Needs human = Yes.</p></details>
+<details class="faq"><summary>Which questions always go to a human?</summary><p>Refunds, complaints, allergies or reactions, and guaranteed results are always set to Needs human = Yes, and their answers never promise an outcome.</p></details>
+<details class="faq"><summary>Can I open the CSV in Excel?</summary><p>Yes. The CSV is saved as UTF-8 with a BOM so Excel and Google Sheets open it with the correct characters.</p></details>
+<details class="faq"><summary>Is my shop data uploaded anywhere?</summary><p>No. Everything runs in your browser and the page works offline. Nothing you type is sent to a server.</p></details>
+<details class="faq"><summary>Is this medical or legal advice?</summary><p>No. It generates customer-service templates from your input. Allergy, refund and complaint cases should be handled by your staff; anyone with a serious reaction should seek medical care.</p></details>
+</section>
+
+<p class="disc"><b>Disclaimer:</b> This tool generates customer-service templates from the information you enter. It is not medical, legal or consumer-dispute advice. Allergy, reaction, refund and complaint cases should be handled by your staff; anyone with a serious reaction should seek medical care immediately. Review all output before use.</p>
+<textarea id="out" aria-hidden="true"></textarea>
+</div>
+<script id="gen-core">
+function t(s){ return (s==null?"":String(s)).replace(/\s+/g," ").trim(); }
+function generateFAQ(d){
+  d = d || {};
+  var name=t(d.name)||"our shop", ind=d.industry||"beauty";
+  var addr=t(d.address), hours=t(d.hours), closed=t(d.closed), book=t(d.booking), lead=t(d.leadTime), park=t(d.parking), refund=t(d.refund);
+  var svcs=(d.services||[]).map(function(s){return {n:t(s.name),p:t(s.price)};}).filter(function(s){return s.n;});
+  var MISSING="isn't in our records yet. I've passed your question to a team member, who will confirm shortly.";
+  var rows=[]; function add(c,q,a,h,k){ rows.push([c,q,a,h,k]); }
+  add("Basics","What's the shop name and where are you located?", addr ? "We're "+name+", located at "+addr+". Search \""+name+"\" in your maps app to navigate." : "We're "+name+". Our address "+MISSING, addr?"No":"Yes", "address,where,location,directions,map");
+  add("Basics","What are your opening hours?", hours ? "Opening hours: "+hours+(closed?"; closed "+closed:"")+". Holiday changes will be posted by the shop." : "Our opening hours "+MISSING, hours?"No":"Yes", "hours,open,close,opening times,open today");
+  add("Basics","Where can I park, and how do I get there by public transport?", park ? park+". Please check on-site signs." : "Parking and transit information "+MISSING, park?"No":"Yes", "parking,car park,subway,bus,directions");
+  var sw = ind==="food" ? "menu items" : "services";
+  add("Services","What "+sw+" do you offer?", svcs.length ? "Our main "+sw+": "+svcs.map(function(s){return s.n;}).join(", ")+". Message us or visit for details." : "Our "+sw+" list "+MISSING, svcs.length?"No":"Yes", ind==="food"?"menu,food,dishes,set menu,specials":"services,treatments,what do you do,menu");
+  var priced=svcs.filter(function(s){return s.p;});
+  add("Pricing","How much does it cost?", priced.length ? "Reference prices: "+priced.map(function(s){return s.n+" "+s.p;}).join("; ")+". Final price is confirmed in store; the assistant cannot offer extra discounts." : "Pricing "+MISSING, priced.length?"No":"Yes", "price,how much,cost,price list,expensive");
+  add("Booking","How do I book, and how far in advance?", book ? "Book via: "+book+(lead?"; we recommend booking "+lead:"")+". Please let us know in advance if you need to reschedule." : "Booking details "+MISSING, book?"No":"Yes", "book,booking,reservation,appointment,reschedule");
+  add("After-sales","Can I get a refund?", (refund?"Our refund policy: "+refund+". ":"")+"Whether a refund applies has to be checked by our staff against your order; the assistant cannot promise a refund. I've passed this to a team member.", "Yes", "refund,money back,cancel,return,chargeback");
+  add("After-sales","I want to make a complaint / I'm not happy with the service.", "We're sorry about your experience. Please share your order details and what happened, and we'll pass it straight to the manager, who will contact you as soon as possible.", "Yes", "complaint,unhappy,bad service,bad review,manager");
+  var al = ind==="food"
+    ? "If you have a food allergy or dietary restriction, please tell our staff when ordering or booking so they can check ingredients in person. The assistant cannot guarantee a dish is free of allergens. If you have a severe reaction, seek medical care immediately."
+    : ind==="beauty"
+    ? "If you notice redness, stinging or another reaction, stop using the product, keep photos and your order details, and we'll pass this to a team member right away. If symptoms are severe, seek medical care immediately. The assistant cannot judge the cause of a reaction."
+    : "If you have an allergy or feel unwell, please keep your order details and we'll pass this to a team member right away. If symptoms are severe, seek medical care immediately. The assistant cannot judge the cause or give treatment advice.";
+  add("Compliance", ind==="food"?"I have a food allergy. Is it safe for me to eat here?":"I had a reaction / I feel unwell. What should I do?", al, "Yes", ind==="food"?"allergy,allergic,gluten,nuts,dietary":"allergy,reaction,redness,rash,unwell");
+  var gq = ind==="food" ? "Can you guarantee I'll love the food?" : ind==="beauty" ? "Can you guarantee results?" : "Can you guarantee the outcome?";
+  add("Compliance", gq, "We can't make guarantees. Everyone's situation and experience is different. "+name+" will provide the service carefully to our standards, but we don't promise specific results. I've passed your question to a team member.", "Yes", "guarantee,guaranteed results,promise,does it work,no results");
+  return rows;
+}
+var FAQ_HEADER=["Category","Question","Standard answer","Needs human","Trigger keywords"];
+function csvCell(v){ v=String(v); return /[",\n\r]/.test(v) ? '"'+v.replace(/"/g,'""')+'"' : v; }
+function toCSV(rows){ return [FAQ_HEADER].concat(rows).map(function(r){return r.map(csvCell).join(",");}).join("\r\n")+"\r\n"; }
+function toText(rows){ return rows.map(function(r,i){return (i+1)+". ["+r[0]+"] "+r[1]+"\nA: "+r[2]+"\nNeeds human: "+r[3]+" | Keywords: "+r[4];}).join("\n\n"); }
+if (typeof module!=="undefined") module.exports={generateFAQ:generateFAQ,toCSV:toCSV,toText:toText,FAQ_HEADER:FAQ_HEADER};
+</script>
+<script>
+(function(){
+  var $=function(id){return document.getElementById(id);};
+  var rows=[];
+  function addSvc(n,p){
+    var d=document.createElement("div"); d.className="svc";
+    d.innerHTML='<input placeholder="Service, e.g. Gel manicure" class="sn"><input placeholder="Price range, e.g. $35–$60" class="sp"><button type="button" aria-label="Remove">×</button>';
+    d.querySelector(".sn").value=n||""; d.querySelector(".sp").value=p||"";
+    d.querySelector("button").onclick=function(){d.remove();}; $("svcs").appendChild(d);
+  }
+  addSvc(); addSvc(); $("addSvc").onclick=function(){addSvc();};
+  function data(){ return {name:$("name").value, industry:$("ind").value, address:$("addr").value, hours:$("hours").value, closed:$("closed").value,
+    services:[].map.call(document.querySelectorAll(".svc"),function(r){return {name:r.querySelector(".sn").value, price:r.querySelector(".sp").value};}),
+    booking:$("book").value, leadTime:$("lead").value, parking:$("park").value, refund:$("refund").value}; }
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+  $("gen").onclick=function(){
+    if(!$("name").value.trim()){ $("err").textContent="Please enter your shop name first."; $("name").focus(); return; }
+    $("err").textContent=""; rows=generateFAQ(data());
+    $("tbl").querySelector("tbody").innerHTML=rows.map(function(r){return "<tr><td>"+esc(r[0])+"</td><td>"+esc(r[1])+"</td><td>"+esc(r[2])+'</td><td class="h'+(r[3]==="Yes"?" y":"")+'">'+esc(r[3])+"</td><td>"+esc(r[4])+"</td></tr>";}).join("");
+    $("resCard").hidden=false; $("resCard").scrollIntoView({behavior:"smooth"});
+  };
+  $("demo").onclick=function(){
+    $("name").value="Maple Nail Studio (sample)"; $("ind").value="beauty"; $("addr").value="12 Example Street, 2nd floor (sample)";
+    $("hours").value="10:00–21:00"; $("closed").value="on Mondays"; $("book").value="Instagram DM or phone"; $("lead").value="at least 1 day ahead";
+    $("park").value="Paid street parking outside; 5 min walk from Example station"; $("refund").value="unused prepaid sessions refundable within 7 days; completed services are non-refundable";
+    $("svcs").innerHTML=""; addSvc("Gel manicure (sample)","$35–$60 (sample)"); addSvc("Hand care (sample)","$25 (sample)");
+  };
+  $("dl").onclick=function(){
+    var blob=new Blob(["\ufeff"+toCSV(rows)],{type:"text/csv;charset=utf-8"});
+    var fn=(($("name").value.trim()||"shop").replace(/[\\/:*?"<>|]/g,""))+"-FAQ-10.csv";
+    if (window.navigator && navigator.msSaveBlob) { navigator.msSaveBlob(blob,fn); return; }
+    var a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download=fn; document.body.appendChild(a); a.click();
+    setTimeout(function(){URL.revokeObjectURL(a.href); a.remove();},1000);
+    $("msg").textContent="CSV created. If nothing happens inside an in-app browser, open this page in your regular browser or use Copy as text.";
+  };
+  $("cp").onclick=function(){
+    var txt=toText(rows);
+    function fallback(){ var o=$("out"); o.value=txt; o.select(); var ok=false; try{ok=document.execCommand("copy");}catch(e){} $("msg").textContent= ok?"Copied. Paste into a doc or spreadsheet.":"Copy failed. Select the table and copy manually."; }
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(txt).then(function(){$("msg").textContent="Copied. Paste into a doc or spreadsheet.";},fallback); else fallback();
+  };
+})();
+</script>
+</body>
+</html>
